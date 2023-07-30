@@ -1,1 +1,1 @@
-This file will be overwritten by `index.ipynb`
+Scripts for the submission "ORBERT: self-supervised masked orbit modelling for space situational awareness applications" coming soon.
