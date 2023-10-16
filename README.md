@@ -1,5 +1,10 @@
-Scripts for the submission "ORBERT: self-supervised masked orbit modelling for space situational awareness applications" coming soon.
+## Description
 
+> ORBERT: self-supervised masked orbit modelling for space situational awareness applications.
+
+## Change log
+
+[13/10/2023] Scripts for the submission "ORBERT: self-supervised masked orbit modelling for space situational awareness applications" will be uploaded in the next days.
 
 ## Citing ORBERT
 
