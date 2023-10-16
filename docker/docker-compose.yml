@@ -1,0 +1,23 @@
+version: "3.7"
+services:
+  jupyter:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+      args:
+        - USER_ID=${USER_ID} #* 
+        - GROUP_ID=${GROUP_ID} #* 
+        - USER=${USER_NAME} #*
+    ports:
+      - "${JUPYTER_PORT}:8888" #*
+    expose:
+      - "8888"
+    environment:
+      - WANDB_API_KEY=${WANDB_API_KEY} #*
+      - CUDA_VISIBLE_DEVICES=${CUDA_VISIBLE_DEVICES}
+      - GH_TOKEN=${GH_TOKEN} #*
+      - WANDB_DIR=/home/${USER_NAME}/work
+    runtime: nvidia
+    volumes:
+      - ../:/home/${USER_NAME}/work #*
+      - ${LOCAL_DATA_PATH}:/home/${USER_NAME}/data/ #*
